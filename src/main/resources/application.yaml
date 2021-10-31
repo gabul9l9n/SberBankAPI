@@ -1,0 +1,20 @@
+#DB settings
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:./db/Card
+    username: sa
+    password:
+  h2:
+    console:
+      path: /h2
+      enabled: true
+  sql:
+    init:
+      mode: always
+
+#Jackson settings
+  jackson:
+    serialization:
+      wrap-root-value: true
+      indent-output: true
